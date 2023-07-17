@@ -1,0 +1,143 @@
+.loginScreen {
+    position: relative;
+    height: 100%;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/43e91e6d-7984-4c10-98bd-f9500bff72c3/RO-en-20230320-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    center no-repeat;
+    background-size: cover;
+    
+}
+.loginScreen_body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.loginScreen_body > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.loginScreen_body > h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.loginScreen_body {
+    position: absolute;
+    top:30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    /* padding: 20px; */
+    width: 100%;
+}
+.loginScreen_gradient {
+    width:100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8) 0,
+    rgba(0,0,0,0) 60%,
+    rgba(0,0,0,0.8) 100%
+);
+background-size: cover;
+}
+
+.signupScreen_button {
+    position: fixed;
+    right: 20px;
+    top: 14px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.loginScreen_logo {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100px;
+    cursor: pointer;
+    object-fit: contain;
+    padding-left: 20px;
+}
+.signupScreen_input {
+    margin: 20px;
+}
+.signupScreen_input > form > input{
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+    background-color: #fff;
+    color: #111;
+}
+.loginScreen_getStarted {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.signupScreen_form {
+    display: flex;
+    justify-content: center;
+}
+.signupScreen_form > input::placeholder {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .loginScreen_body > h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .loginScreen_body > h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .loginScreen_body > h3 {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .signupScreen_input > form > input{
+        padding: 3px;
+        outline-width: 0;
+        height: 30px;
+        width: 40%;
+        border: none;
+        max-width: 600px;
+        background-color: #fff;
+        color: #111;
+    }
+    .loginScreen_getStarted {
+        padding: 9px 12px;
+        /* padding: 3px; */
+        height: 37px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #e50914;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .signupScreen_form {
+        display: flex;
+        justify-content: center;
+    }
+    .signupScreen_form > input::placeholder {
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+  }

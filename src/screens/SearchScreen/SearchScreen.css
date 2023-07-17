@@ -1,0 +1,27 @@
+.search__input {
+    margin: 25px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(93, 93, 93);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+  }
+  form input::placeholder {
+    color: aliceblue;
+    font-size: 15px;
+  }
+  .search__input button {
+    background-color: #e50914;
+    border: none;
+    padding: 1%;
+  }
+  .search__icon {
+    color: white;
+    font-size: 20px;
+  }
+  

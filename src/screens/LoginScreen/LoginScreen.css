@@ -1,0 +1,101 @@
+.loginScreen {
+    position: relative;
+    height: 100vh;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/44355e66-dbf8-4dd8-ba6b-8e9e32ec6abd/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+      center no-repeat;
+    background-size: cover;
+  }
+  .loginScreen__logo {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100px;
+    cursor: pointer;
+    object-fit: contain;
+    padding-left: 20px;
+  }
+  .loginScreen__gadient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(80, 80, 80, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+  .loginScreen__box {
+    max-width: 300px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: auto;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  .loginScreen__box > form > h1 {
+    text-align: left;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .loginScreen__box > form > h4 {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .loginScreen__box_gray {
+    color: rgb(173, 173, 173);
+    /* color: #fff; */
+    font-weight: 500;
+  }
+  .loginScreen__box > form {
+    display: grid;
+    flex-direction: column;
+  }
+  .loginScreen__box > form > input {
+    /* padding: 10px; */
+    outline-width: 0;
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #111; 
+    border: none;
+
+  }
+  .loginScreen__box > form > input::placeholder {
+    color: #111;
+}
+  .loginScreen__box > form > button {
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #E50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .loginScreen__box_link > a {
+    text-decoration: none;
+    color: white;
+  }
+  .loginScreen__box_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .err__box {
+    background-color: #F5454E;
+    color: white;
+    padding: 10px;
+    width: auto;
+  }
